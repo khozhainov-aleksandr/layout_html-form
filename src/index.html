@@ -11,41 +11,195 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <main class="main-form">
-      <!-- Section Personal Info -->
-      <section class="main-form__section-personal-info">
-        <h2 class="main-form__section-personal-info_title">
-          <dib class="main-form__section_personal-info_surname-wrapper">
-            <label
-              for="personalInfoSurname"
-              class="main-form__section_personal-info_surname-wrapper_label">
-              Surname:
-            </label>
+    <h1 class="form-title">HTML Form</h1>
+
+    <form
+      class="main-form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <!-- Personal Info -->
+      <fieldset class="personal-info section_wrapper">
+        <legend class="personal-info__title">Personal Info</legend>
+
+        <div class="personal-info__wrapper wrapper">
+          <label for="personalInfoSurname">Surname:</label>
+          <input
+            type="text"
+            name="userSurname"
+            id="personalInfoSurname"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <div class="personal-info__wrapper wrapper">
+          <label for="personalInfoName">Name:</label>
+          <input
+            type="text"
+            name="userName"
+            id="personalInfoName"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <div class="personal-info__wrapper wrapper">
+          <label for="personalInfoOld">How old are You?</label>
+          <input
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+            name="userOld"
+            id="personalInfoOld">
+        </div>
+
+        <div class="personal-info__wrapper wrapper">
+          <label for="personalInfoBirth">Full date of birth:</label>
+          <input
+            type="date"
+            name="userBirth"
+            id="personalInfoBirth"
+            class="cursor"
+            required
+          >
+        </div>
+
+        <div class="personal-info__wrapper wrapper">
+          <label for="personalInfoAgreement">I accept the term agreement</label>
+          <input type="checkbox" name="userAgreement" id="personalInfoAgreement">
+        </div>
+      </fieldset>
+
+      <!-- Registration -->
+      <fieldset class="registration section_wrapper">
+        <legend class="registration__title">Registration</legend>
+
+        <div class="registration__wrapper wrapper">
+          <label for="registrationEmail">E-mail:</label>
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="userEmail"
+            id="registrationEmail"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <div class="registration__wrapper wrapper">
+          <label for="registrationPassword">Password:</label>
+          <input type="password" name="userPassword" id="registrationPassword">
+        </div>
+      </fieldset>
+
+      <!-- Interesting facts -->
+      <fieldset class="interesting-fact section_wrapper">
+        <legend class="interesting-fact__title">An interesting fact about you!</legend>
+
+        <div class="interesting-fact__wrapper wrapper cats-block">
+          <p class="interesting-fact__wrapper_title">Do you love cats?</p>
+          <div class="interesting-fact__wrapper_section">
             <input
-              type="text"
-              name="surname"
-              id="personalInfoSurname"
-              class="main-form__section_personal-info_surname-wrapper_input"
+              type="radio"
+              id="interestingFactCatYes"
+              name="userLoveCats"
+              value="LoveCats"
+              class="cursor"
             >
-          </dib>
-          <div class="main-form__section_personal-info_name-wrapper">
-            <label
-              for="personalInfoName"
-              class="main-form__section_personal-info_name-wrapper_label">
-              Name:
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="personalInfoName"
-              class="main-form__section_personal-info_name-wrapper_input"
-            >
+            <label for="interestingFactCatYes">Yes</label>
           </div>
-        </h2>
-      </section>
-      <!--  -->
-    </main>
+          <div class="interesting-fact__wrapper_section">
+            <input
+              type="radio"
+              id="interestingFactCatNo"
+              name="userLoveCats"
+              value="LoveCats"
+              class="cursor"
+            >
+            <label for="interestingFactCatNo">No</label>
+          </div>
+        </div>
+
+        <div class="interesting-fact__wrapper wrapper">
+          <label for="interestingFactFavoriteColor">What is your favorite color?</label>
+          <input
+            type="color"
+            name="userFavoriteColor"
+            id="interestingFactFavoriteColor"
+            class="cursor"
+          >
+        </div>
+
+        <div class="interesting-fact__wrapper wrapper">
+          <label for="interestingFactTimeToBad">What time do you go to bad?</label>
+          <input
+            type="time"
+            step="0.1"
+            name="userTimeToBad"
+            id="interestingFactTimeToBad"
+            class="cursor"
+          >
+        </div>
+
+        <div class="interesting-fact__wrapper wrapper">
+          <label for="interestingFactFavoriteCar">What are your favorite brand of cars?</label>
+          <select
+            name="userFavoriteCar"
+            id="interestingFactFavoriteCar"
+            size="4"
+            multiple
+          >
+            <option class="cursor" value="BMV">BMV</option>
+            <option class="cursor" value="Audi">Audi</option>
+            <option class="cursor" value="Lada">Lada</option>
+          </select>
+        </div>
+
+        <div class="interesting-fact__wrapper wrapper">
+          <label for="interestingFactRateOurWork">How do you rate our work?</label>
+          <input
+            type="range"
+            value="0"
+            step="1"
+            min="0"
+            max="10"
+            name="userRateOurWork"
+            id="interestingFactRateOurWork"
+            class="cursor"
+          >
+        </div>
+      </fieldset>
+
+      <!-- Additional info -->
+      <fieldset class="additional-info section_wrapper">
+        <legend class="additional-info__title">Additional info:</legend>
+        <div class="additional-info__wrapper wrapper">
+          <label for="additionalComments">Comments:</label>
+          <textarea
+            name="userComments"
+            id="additionalComments"
+            minlength="10"
+            maxlength="300"
+            autocomplete="off"
+          ></textarea>
+        </div>
+
+        <div class="additional-info__wrapper wrapper">
+          <label for="additionalRecommend">Would you recommend us?</label>
+          <select name="userRecommend" id="additionalRecommend" class="cursor">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Button to post -->
+      <div class="button__wrapper wrapper">
+        <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

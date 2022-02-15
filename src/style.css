@@ -1,1 +1,50 @@
 /* styles go here */
+
+/* Only for remove title h1 */
+.form-title {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+}
+
+.section_wrapper {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  padding: 5px 0;
+}
+
+.wrapper > * {
+  padding-right: 2px;
+}
+
+.cats-block {
+  height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.cats-block > * {
+  display: block;
+}
+
+.interesting-fact__wrapper_title {
+  padding-right: 4px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.button {
+  padding: 2px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

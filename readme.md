@@ -19,31 +19,31 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Do not use tabs for indentation. Instead use 2 spaces
 - Most of the time you want each tag in new line
 - Form should have different inputs with such types:
-  - [ ] text
-  - [ ] number
-  - [ ] email
-  - [ ] checkbox
-  - [ ] radio
-  - [ ] password
-  - [ ] range
-  - [ ] time
-  - [ ] color
-  - [ ] date
+  - [x] text
+  - [x] number
+  - [x] email
+  - [x] checkbox
+  - [x] radio
+  - [x] password
+  - [x] range
+  - [x] time
+  - [x] color
+  - [x] date
 - Form should have textarea and select elements.
 - You should use each of this attribute at least once
-  - [ ] required
-  - [ ] min
-  - [ ] max
-  - [ ] minlength
-  - [ ] maxlength
-  - [ ] multiple
-- Age should be at least `1` and at max `100` with a default value of `12`
-- The email field should have placeholder value: `email@example.com`.
-- Text fields should have `autocomplete="off"`.
-- `Submit` button should have a `type="submit"`
-- Vertical distance between inputs should be `10px`
-- Vertical distance between groups should be `20px`
-- Any other styles should be browser default
+  - [x] required
+  - [x] min
+  - [x] max
+  - [x] min length
+  - [x] max length
+  - [x] multiple
+- [x] Age should be at least `1` and at max `100` with a default value of `12`
+- [x] The email field should have placeholder value: `email@example.com`.
+- [x] Text fields should have `autocomplete="off"`.
+- [x] `Submit` button should have a `type="submit"`
+- [x] Vertical distance between inputs should be `10px`
+- [x] Vertical distance between groups should be `20px`
+- [x] Any other styles should be browser default
 
 --> Don't forget to proofread your code using [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md)
 
