@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1 class="form-title">HTML Form</h1>
 
     <form
       class="main-form"
@@ -20,7 +19,7 @@
     >
       <!-- Personal Info -->
       <fieldset class="personal-info section_wrapper">
-        <legend class="personal-info__title">Personal Info</legend>
+        <legend class="personal-info__title">Personal information</legend>
 
         <div class="personal-info__wrapper wrapper">
           <label for="personalInfoSurname">Surname:</label>
@@ -66,7 +65,7 @@
           >
         </div>
 
-        <div class="personal-info__wrapper wrapper">
+        <div class="personal-info__wrapper">
           <label for="personalInfoAgreement">I accept the term agreement</label>
           <input type="checkbox" name="userAgreement" id="personalInfoAgreement">
         </div>
@@ -88,7 +87,7 @@
           >
         </div>
 
-        <div class="registration__wrapper wrapper">
+        <div class="registration__wrapper">
           <label for="registrationPassword">Password:</label>
           <input type="password" name="userPassword" id="registrationPassword">
         </div>
@@ -99,8 +98,8 @@
         <legend class="interesting-fact__title">An interesting fact about you!</legend>
 
         <div class="interesting-fact__wrapper wrapper cats-block">
-          <p class="interesting-fact__wrapper_title">Do you love cats?</p>
-          <div class="interesting-fact__wrapper_section">
+          <span class="interesting-fact__wrapper_title">Do you love cats?</span>
+          <span class="interesting-fact__wrapper_section">
             <input
               type="radio"
               id="interestingFactCatYes"
@@ -109,8 +108,8 @@
               class="cursor"
             >
             <label for="interestingFactCatYes">Yes</label>
-          </div>
-          <div class="interesting-fact__wrapper_section">
+          </span>
+          <span class="interesting-fact__wrapper_section">
             <input
               type="radio"
               id="interestingFactCatNo"
@@ -119,7 +118,7 @@
               class="cursor"
             >
             <label for="interestingFactCatNo">No</label>
-          </div>
+          </span>
         </div>
 
         <div class="interesting-fact__wrapper wrapper">
@@ -157,7 +156,7 @@
           </select>
         </div>
 
-        <div class="interesting-fact__wrapper wrapper">
+        <div class="interesting-fact__wrapper">
           <label for="interestingFactRateOurWork">How do you rate our work?</label>
           <input
             type="range"
@@ -186,7 +185,7 @@
           ></textarea>
         </div>
 
-        <div class="additional-info__wrapper wrapper">
+        <div class="additional-info__wrapper">
           <label for="additionalRecommend">Would you recommend us?</label>
           <select name="userRecommend" id="additionalRecommend" class="cursor">
             <option value="yes">yes</option>
